@@ -33,4 +33,5 @@ if __name__ == '__main__':
                         data=DATA_JSON)
     if res.status_code != 201:
         print("Request to create repos failed!")
+    # add SSH to github account
     shell_cmd(GITHUB_PUSH_CMD.format(DEST=DEST, USER=USER, REPOS=REPOS))
