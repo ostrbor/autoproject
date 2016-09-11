@@ -1,2 +1,3 @@
-USER = ""
+"Credentials for authorization"
+GITHUB_USER = ""
 GITHUB_TOKEN = ""
