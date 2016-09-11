@@ -1,11 +1,11 @@
 """Create project folder, github repo with
 content from Templates"""
-from pathlib import Path
+import os
 import json
 import subprocess
-import os
-from config import GITHUB_USER, GITHUB_TOKEN
+from pathlib import Path
 import requests
+from config import GITHUB_USER, GITHUB_TOKEN
 
 TEMPLATE_DIR = "Templates"
 PROJECT_HOME_ENV = "PROJECT_HOME"
