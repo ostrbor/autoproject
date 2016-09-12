@@ -1,5 +1,13 @@
-"""Create project folder, github repo with
-content from Templates"""
+"""
+Input: name of project.
+Dependancy: TEMPLATES_DIR in PROJECT_HOME
+
+Script creates project and github repo.
+
+TODO: check for name collision between input and existing repo.
+TODO: undo any changes if intermidiate step fails.
+TODO: docopt to use flag to disable venv creation.
+"""
 import os
 import json
 import subprocess
