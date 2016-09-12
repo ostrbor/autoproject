@@ -10,7 +10,7 @@ from config import GITHUB_USER, GITHUB_TOKEN
 TEMPLATE_DIR = "Templates"
 PROJECT_HOME_ENV = "PROJECT_HOME"
 MAKE_VENV_CMD = "source /usr/local/bin/virtualenvwrapper.sh && mkproject {}"
-COPY_CMD = "cp -R {SRC}/* {DEST}"
+COPY_CMD = "cp -R {SRC}/. {DEST}"
 GIT_INIT_CMD = "cd {DEST} && git init && git add . && git commit -m 'First commit'"
 GITHUB_API_URL = "https://api.github.com/user/repos?access_token={TOKEN}"
 GITHUB_PUSH_CMD = "cd {DEST} && git remote add origin git@github.com:{GITHUB_USER}/{REPOS}.git "\
